@@ -101,7 +101,7 @@ header {
 
 .separator {
   color: rgb(128, 128, 128);
-  margin: 0px .7ex 0px .7ex;
+  margin: 0px 0.7ex 0px 0.7ex;
   cursor: default;
   display: inline;
 }
@@ -167,4 +167,75 @@ header {
 
 .lang {
   font-weight: bold;
+}
+.right-bar {
+  float: right;
+  background-color: black;
+  width: 300px;
+  margin: 66px 5px 0px 0px;
+}
+.right-bar .spacer {
+  margin: 7px 0 12px 0;
+}
+.search input[type="text"] {
+  clear: both;
+  border: 1px solid gray;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 6px;
+  padding-right: 25px;
+  padding-left: 9px;
+}
+.link {
+  text-align: center;
+  position: relative;
+  border: 1px solid white;
+}
+.account-activ .link {
+  font-size: 10px;
+}
+.text {
+  color: aliceblue;
+  float: right;
+}
+.left-bar {
+  float: left;
+  clear: both;
+  width: 130px;
+  padding-right: 14px;
+  margin-top: -225px;
+  background-color: black;
+}
+.grip {
+  clear: both;
+  border: 1px solid black;
+  height: 100%;
+  position: absolute;
+  margin-left: 135px;
+}
+.left-top {
+  background-color: aqua;
+  padding: 5px;
+}
+.left-mid {
+  background-color: aqua;
+  padding: 5px;
+}
+.left-bottom {
+  background-color: aqua;
+  padding: 5px;
+}
+h3 {
+  color: aliceblue;
+}
+.create input {
+  width: 90px;
+}
+footer {
+  text-align: center;
+  font-size: 100px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
 }
