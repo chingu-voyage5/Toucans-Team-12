@@ -15,7 +15,7 @@ a {
 
 header {
   padding: 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   border-bottom: 1px solid rgb(95, 153, 207);
 }
@@ -172,7 +172,7 @@ header {
   float: right;
   background-color: black;
   width: 300px;
-  margin: 66px 5px 0px 0px;
+  margin: 0px 5px 0px 5px;
 }
 .right-bar .spacer {
   margin: 7px 0 12px 0;
@@ -185,6 +185,9 @@ header {
   padding: 6px;
   padding-right: 25px;
   padding-left: 9px;
+}
+.search input[type="submit"]{
+  
 }
 .link {
   text-align: center;
