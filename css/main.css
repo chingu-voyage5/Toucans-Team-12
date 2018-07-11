@@ -5,6 +5,35 @@
   box-sizing: border-box;
 }
 
+body {
+  font: normal x-small verdana, arial, helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  min-height: 100%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+p,
+  {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   color: rgb(51, 102, 153);
 }
@@ -168,39 +197,346 @@ header {
 .lang {
   font-weight: bold;
 }
+
+/* ----------------------------
+
+             Right Bar
+
+------------------------------ */
+
 .right-bar {
   float: right;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   width: 300px;
   margin: 0px 5px 0px 5px;
 }
+
 .right-bar .spacer {
   margin: 7px 0 12px 0;
 }
+
+div {
+  display: block;
+}
+
+/*-------------------------------
+
+             Search styles 
+
+--------------------------------*/
+
+.search {
+  white-space: nowrap;
+}
+
 .search input[type="text"] {
-  clear: both;
-  border: 1px solid gray;
+  border: 1px solid rgb(128, 128, 128);
+  font-size: 13px;
+  font-family: verdana;
   width: 300px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding: 6px;
   padding-right: 25px;
   padding-left: 9px;
+  vertical-align: middle;
 }
-.search input[type="submit"]{
-  
+
+.search input[type="submit"] {
+  background-color: transparent;
+  background-image: url(sprite-reddit.png);
+  background-position: -60px -1667px;
+  background-repeat: no-repeat;
+  height: 13px;
+  width: 13px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: none;
+  margin: 0;
+  margin-left: -28px;
+  vertical-align: middle;
 }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  padding: 2px 6px 3px;
+  align-items: flex-start;
+  text-align: center;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.searchexpando {
+  margin: 5px 0 0 0;
+  padding-top: 10px;
+  border-radius: 3px;
+}
+
+.infobar {
+  background-color: rgb(246, 230, 159);
+  border-color: rgb(255, 165, 0);
+  border-style: solid;
+  border-width: 1px;
+  font-size: small;
+  padding: 5px 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  -webkit-writing-mode: horizontal-tb !important;
+}
+
+input[type="hidden" i],
+input[type="image" i],
+input[type="file" i] {
+  -webkit-appearance: initial;
+  background-color: initial;
+  cursor: default;
+  /* padding: initial; */
+  border: initial;
+}
+
+.searchexpando,
+#moresearchinfo {
+  white-space: normal;
+}
+
+#moresearchinfo {
+  display: none;
+  padding-top: 5px;
+  max-width: 300px;
+  border: 0 solid rgb(255, 165, 0);
+  margin-top: -5px;
+}
+
+#search_hidemore {
+  float: right;
+  margin-left: 5px;
+}
+
+#searchexpando input,
+#searchexpando p {
+  margin-bottom: 10px;
+}
+
+#searchexpando dl {
+  margin: 10px 0;
+}
+
+#searchexpando dt {
+  margin: 0;
+}
+
+dl {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+dt {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+code {
+  font-style: normal;
+  font-weight: normal;
+  font-family: monospace, monospace;
+}
+
+dd {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(51, 102, 153);
+}
+
+/* -------------------------------
+
+             Login styles 
+
+---------------------------------- */
+
+.login-form {
+  border: 1px solid rgb(128, 128, 128);
+  overflow: hidden;
+  font: normal x-small verdana, arial, helvetica, sans-serif;
+}
+
+input[type=hidden] {
+  position: absolute;
+}
+
+.login-form input[type=text],
+.login-form input[type=password] {
+  font-family: verdana;
+  font-size: 11px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #999;
+  width: 141px;
+  margin: 5px 0px 0px 5px;
+  top: 5px;
+  padding: 6px;
+}
+
+.login-form input[type=password] {
+  width: 142px;
+}
+
+.login-form #remember-me {
+  float: left;
+  line-height: 24px;
+  margin-left: 5px;
+}
+
+.login-form #remember-me,
+.login-form .submit {
+  margin: 4px;
+}
+
+.login-form #remember-me * {
+  vertical-align: middle;
+}
+
+#rem-login-main {
+  position: static;
+  height: auto;
+  width: auto;
+  border: none;
+  margin-right: 5px;
+  margin-top: 0;
+}
+
+form input[type=checkbox],
+form input[type=radio] {
+  margin: 2px .5em 0 0;
+}
+
+.login-form label {
+  padding: 2px 0 2px 0;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.login-form .recover-password {
+  margin-left: 1em;
+}
+
+.login-form .submit {
+  float: right;
+  vertical-align: middle;
+}
+
+.throbber {
+  display: none;
+  margin: 0 2px;
+  background: url(../throbber.gif) no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+.clear {
+  clear: both;
+}
+
+input,
+select,
+button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+.login-form .status {
+  display: none;
+}
+
+/* --------------------------
+
+          Links
+
+----------------------------- */
+
 .link {
+  display: block;
   text-align: center;
   position: relative;
-  border: 1px solid white;
+  border: 1px solid rgb(196, 219, 241);
+  background: rgb(255, 255, 255) none repeat-x scroll center left;
+  background-image: url(sprite-reddit.png);
+  background-position: 0px -278px;
+  background-repeat: repeat;
+  font-size: 150%;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 29px;
+  height: 29px;
 }
-.account-activ .link {
+
+.link a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(51, 102, 153);
+}
+
+.link .nub {
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  height: 31px;
+  width: 24px;
+  background: rgb(255, 255, 255) none no-repeat scroll center left;
+  background-image: url(sprite-reddit.png);
+  background-position: -61px -1369px;
+  background-repeat: no-repeat;
+}
+
+/* .account-activ .link {
   font-size: 10px;
 }
+
 .text {
   color: aliceblue;
   float: right;
 }
+
 .left-bar {
   float: left;
   clear: both;
@@ -209,6 +545,7 @@ header {
   margin-top: -225px;
   background-color: black;
 }
+
 .grip {
   clear: both;
   border: 1px solid black;
@@ -216,24 +553,30 @@ header {
   position: absolute;
   margin-left: 135px;
 }
+
 .left-top {
   background-color: aqua;
   padding: 5px;
 }
+
 .left-mid {
   background-color: aqua;
   padding: 5px;
 }
+
 .left-bottom {
   background-color: aqua;
   padding: 5px;
 }
+
 h3 {
   color: aliceblue;
 }
+
 .create input {
   width: 90px;
-}
+} */
+
 footer {
   text-align: center;
   font-size: 100px;
@@ -241,4 +584,5 @@ footer {
   bottom: 0;
   width: 100%;
   height: 0px;
+  border: 1px solid black;
 }

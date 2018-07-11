@@ -142,26 +142,96 @@
       <!-- Right Side Bar -->
       <div class="right-bar">
         <div class="spacer">
-          <form action="https://www.reddit.com/search" class="search">
+          <form action="https://www.reddit.com/search" class="search" role="search">
             <input type="text" name="q" placeholder="search" tabindex="20">
             <input type="submit" value tabindex="22">
+            <div id="searchexpando" class="infobar" style="display:block;">
+              <div id="moresearchinfo" style="display: block;">
+                <a href="#" id="search_hidemore">[-]</a>
+                <p>use the following search parameters to narrow your results:</p>
+                <dl>
+                  <dt>
+                    "subreddit:"
+                    <i>subreddit</i>
+                  </dt>
+                  <dd>find submissions in "subreddit"</dd>
+                  <dt>
+                    "author:"
+                    <i>username</i>
+                  </dt>
+                  <dd>find submissions by "username"</dd>
+                  <dt>
+                    "site:"
+                    <i>example.com</i>
+                  </dt>
+                  <dd>find submissions from "example.com"</dd>
+                  <dt>
+                    "url:"
+                    <i>text</i>
+                  </dt>
+                  <dd>search for "text" in url</dd>
+                  <dt>
+                    "selftext:"
+                    <i>text</i>
+                  </dt>
+                  <dd>search for "text in self post contents</dd>
+                  <dt>self:yes (or self:no)</dt>
+                  <dd>include (or exclude) self posts</dd>
+                  <dt>nsfw:yes (or nsfw:no)</dt>
+                  <dd>include (or exclude) results marked as NSFW</dd>
+                </dl>
+                <p>
+                  "e.g. "
+                  <code>subreddit:aww site:imgur.com dog</code>
+                </p>
+                <p>
+                  <a href="https://www.reddit.com/wiki/search">see the search faq for details</a>
+                </p>
+              </div>
+              <p style="display: none;">
+                <a href="https://www.reddit.com/wiki/search" id="search_showmore">advanced search: by author, subreddit...</a>
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="spacer">
+          <form method="post" action="https://www.reddit.com/post/login" id="login_login-main" class="login-form">
+            <input type="hidden" name="op" value="login-main">
+            <input name="user" placeholder="username" type="text" maxlength="20" tabindex="1">
+            <input name="passwd" placeholder="password" type="password" tabindex="1">
+            <!-- <div class="g-recaptcha" data-sitekey="6LeTnxkTAAAAAN9QEuDZRpn90WwKk_R1TRW_g-JC"></div> -->
+            <div class="status"></div>
+            <div id="remember-me">
+              <input type="checkbox" name="rem" id="rem-login-main" tabindex="1">
+              <label for="rem-login-main">remember me</label>
+              <a class="recover-password" href="https://old.reddit.com/password">reset password</a>
+            </div>
+            <div class="submit">
+              <span class="throbber"></span>
+              <button class="btn" type="submit" tabindex="1">login</button>
+              <div class="clear"></div>
+            </div>
           </form>
         </div>
         <div class="spacer">
           <div class="submit-link">
             <div class="link">
-              <a href="">Link goes here</a>
+              <a href="https://www.reddit.com/submit" data-event-action="submit" data-type="subreddit" data-event-detail="link" class="login-required"
+                target="_top">Submit a new link</a>
+              <div class="nub"></div>
             </div>
           </div>
         </div>
         <div class="spacer">
           <div class="submit-text">
             <div class="link">
-              <a href="">Link goes here</a>
+              <a href="https://www.reddit.com/submit?selftext=true" data-event-action="submit" data-type="subreddit" data-event-detail="self"
+                class="login-required" target="_top">Submit a new text post</a>
+              <div class="nub"></div>
             </div>
           </div>
         </div>
-        <div class="spacer">
+        <!-- <div class="spacer">
           <div class="newsub-box">
             <div class="link">
               <a href="">Link goes here</a>
@@ -180,10 +250,10 @@
               <a href="">Link goes here</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- Left Side Bar -->
-      <div class="left-bar">
+      <!-- <div class="left-bar">
         <div class="grip">
 
         </div>
@@ -226,7 +296,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <!-- Main Body -->
       <div class="main">
 
