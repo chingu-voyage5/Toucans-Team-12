@@ -274,13 +274,13 @@ form {
   display: block;
 }
 
-.searchexpando {
+.search-expand {
   margin: 5px 0 0 0;
   padding-top: 10px;
   border-radius: 3px;
 }
 
-.infobar {
+.info-bar {
   background-color: rgb(246, 230, 159);
   border-color: rgb(255, 165, 0);
   border-style: solid;
@@ -289,35 +289,16 @@ form {
   padding: 5px 10px;
 }
 
-input,
-textarea,
-select,
-button {
-  text-rendering: auto;
-  color: initial;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: start;
-  margin: 0em;
-  font: 400 13.3333px Arial;
-  -webkit-writing-mode: horizontal-tb !important;
-}
-
 input[type="hidden" i],
 input[type="image" i],
 input[type="file" i] {
   -webkit-appearance: initial;
   background-color: initial;
   cursor: default;
-  /* padding: initial; */
   border: initial;
 }
 
-.searchexpando,
+.search-expand,
 #moresearchinfo {
   white-space: normal;
 }
@@ -330,30 +311,22 @@ input[type="file" i] {
   margin-top: -5px;
 }
 
-#search_hidemore {
+#search-hidemore {
   float: right;
   margin-left: 5px;
 }
 
-#searchexpando input,
-#searchexpando p {
+#search-expand input,
+#search-expand p {
   margin-bottom: 10px;
 }
 
-#searchexpando dl {
+#search-expand dl {
   margin: 10px 0;
 }
 
-#searchexpando dt {
+#search-expand dt {
   margin: 0;
-}
-
-dl {
-  display: block;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
 }
 
 dt {
@@ -424,7 +397,7 @@ input[type=hidden] {
   vertical-align: middle;
 }
 
-#rem-login-main {
+#rem-login {
   position: static;
   height: auto;
   width: auto;
@@ -451,38 +424,6 @@ form input[type=radio] {
 .login-form .submit {
   float: right;
   vertical-align: middle;
-}
-
-.throbber {
-  display: none;
-  margin: 0 2px;
-  background: url(../throbber.gif) no-repeat;
-  width: 18px;
-  height: 18px;
-}
-
-.clear {
-  clear: both;
-}
-
-input,
-select,
-button {
-  text-rendering: auto;
-  color: initial;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: start;
-  margin: 0em;
-  font: 400 13.3333px Arial;
-}
-
-.login-form .status {
-  display: none;
 }
 
 /* --------------------------
@@ -516,7 +457,7 @@ button {
   color: rgb(51, 102, 153);
 }
 
-.link .nub {
+.link .edge {
   position: absolute;
   top: -2px;
   right: -1px;
