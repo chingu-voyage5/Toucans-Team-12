@@ -541,6 +541,18 @@ ul {
   clear: both;
 }
 
+.header {
+  background-image: url(Spreddit.png);
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 160px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 0.5px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
 /* .account-activ .link {
   font-size: 10px;
 }
