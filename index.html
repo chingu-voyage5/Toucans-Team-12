@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSS STYLES -->
   <link rel="stylesheet" media="screen" href="css/main.css" />
+  <link rel="stylesheet" media="screen" href="css/expand.css" />
   <!-- Bootstrap Glyphicons Icons -->
   <link rel="stylesheet" href="css/icons.css">
 </head>
@@ -24,12 +25,8 @@
       <div class="sr-list">
         <ul class="flat-list">
           <li class="selected">
-            <a class="choice" href="">Home</a>
+            <a class="choice" href="">popular</a>
             </span>
-          </li>
-          <li>
-            <span class="separator">-</span>
-            <a href="">popular</a>
           </li>
           <li>
             <span class="separator">-</span>
@@ -38,10 +35,6 @@
           <li>
             <span class="separator">-</span>
             <a href="">random</a>
-          </li>
-          <li>
-            <span class="separator">-</span>
-            <a href="">users</a>
           </li>
         </ul>
 
@@ -88,41 +81,58 @@
             <span class="separator">-</span>
             <a href="">creepypasta</a>
           </li>
+          <li>
+            <span class="separator">-</span>
+            <a href="">mildlyinteresting</a>
+          </li>
+          <li>
+            <span class="separator">-</span>
+            <a href="">wholesomememes</a>
+          </li>
+          <li>
+            <span class="separator">-</span>
+            <a href="">science</a>
+          </li>
+          <li>
+            <span class="separator">-</span>
+            <a href="">woahdude</a>
+          </li>
         </ul>
       </div>
+      <a href="" class="more">more »</a>
     </div>
 
     <!-- Main Navigation Bar -->
     <div class="nav-bar">
-      <div class="brand-name left">
-        <a href="" class="header"></a>
+      <div>
+        <a href="" class="spreddit"></a>
       </div>
 
       <!-- Tab Menu -->
       <ul class="tab-menu">
         <li class="selected">
-          <a class="choice" href="#">best</a>
+          <a class="target" href="#1st" id="1st">best</a>
         </li>
         <li>
-          <a href="#">hot</a>
+          <a id="2nd" href="#2nd">hot</a>
         </li>
         <li>
-          <a href="#">new</a>
+          <a id="3rd" href="#3rd">new</a>
         </li>
         <li>
-          <a href="#">rising</a>
+          <a id="4th" href="#4th">rising</a>
         </li>
         <li>
-          <a href="#">controversial</a>
+          <a id="5th" href="#5th">controversial</a>
         </li>
         <li>
-          <a href="#">top</a>
+          <a id="6th" href="#6th">top</a>
         </li>
         <li>
-          <a href="#">gilded</a>
+          <a id="7th" href="#7th">gilded</a>
         </li>
         <li>
-          <a href="#">wiki</a>
+          <a id="8th" href="#8th">wiki</a>
         </li>
       </ul>
       <div class="user-tab right">
@@ -138,142 +148,859 @@
   </header>
   <!-- Page Content -->
   <main>
-    <div>
-      <!-- Right Side Bar -->
-      <div class="right-bar">
-        <div class="spacer">
-          <form action="" class="search" role="search">
-            <input type="text" name="q" placeholder="search">
-            <input type="submit" value="">
-            <div id="search-expand" class="info-bar" style="display:block;">
-              <div id="moresearchinfo" style="display: block;">
-                <a href="#" id="search-hidemore">[-]</a>
-                <p>use the following search parameters to narrow your results:</p>
-                <dl>
-                  <dt>
-                    "subreddit:"
-                    <i>subreddit</i>
-                  </dt>
-                  <dd>find submissions in "subreddit"</dd>
-                  <dt>
-                    "author:"
-                    <i>username</i>
-                  </dt>
-                  <dd>find submissions by "username"</dd>
-                  <dt>
-                    "site:"
-                    <i>example.com</i>
-                  </dt>
-                  <dd>find submissions from "example.com"</dd>
-                  <dt>
-                    "url:"
-                    <i>text</i>
-                  </dt>
-                  <dd>search for "text" in url</dd>
-                  <dt>
-                    "selftext:"
-                    <i>text</i>
-                  </dt>
-                  <dd>search for "text in self post contents</dd>
-                  <dt>self:yes (or self:no)</dt>
-                  <dd>include (or exclude) self posts</dd>
-                  <dt>nsfw:yes (or nsfw:no)</dt>
-                  <dd>include (or exclude) results marked as NSFW</dd>
-                </dl>
-                <p>
-                  "e.g. "
-                  <code>subreddit:aww site:imgur.com dog</code>
-                </p>
-                <p>
-                  <a href="">see the search faq for details</a>
-                </p>
-              </div>
+    <!-- Right Side Bar -->
+    <div class="right-bar">
+      <div class="spacer">
+        <form action="" class="search" role="search">
+          <input type="text" name="q" placeholder="search">
+          <input type="submit" value="">
+          <!-- <div id="search-expand" class="info-bar" style="display:block;">
+            <div id="moresearchinfo" style="display: block;">
+              <a href="#" id="search-hidemore">[-]</a>
+              <p>use the following search parameters to narrow your results:</p>
+              <dl>
+                <dt>
+                  "subreddit:"
+                  <i>subreddit</i>
+                </dt>
+                <dd>find submissions in "subreddit"</dd>
+                <dt>
+                  "author:"
+                  <i>username</i>
+                </dt>
+                <dd>find submissions by "username"</dd>
+                <dt>
+                  "site:"
+                  <i>example.com</i>
+                </dt>
+                <dd>find submissions from "example.com"</dd>
+                <dt>
+                  "url:"
+                  <i>text</i>
+                </dt>
+                <dd>search for "text" in url</dd>
+                <dt>
+                  "selftext:"
+                  <i>text</i>
+                </dt>
+                <dd>search for "text in self post contents</dd>
+                <dt>self:yes (or self:no)</dt>
+                <dd>include (or exclude) self posts</dd>
+                <dt>nsfw:yes (or nsfw:no)</dt>
+                <dd>include (or exclude) results marked as NSFW</dd>
+              </dl>
               <p>
-                <a href="" id="search-showmore">advanced search: by author, subreddit...</a>
+                "e.g. "
+                <code>subreddit:aww site:imgur.com dog</code>
+              </p>
+              <p>
+                <a href="">see the search faq for details</a>
               </p>
             </div>
-          </form>
-        </div>
-        <div class="spacer">
-          <form method="post" action="" id="login-main" class="login-form">
-            <input type="hidden" name="op" value="login-main">
-            <input name="user" placeholder="username" type="text" maxlength="20">
-            <input name="password" placeholder="password" type="password">
-            <div id="remember-me">
-              <input type="checkbox" name="rem" id="rem-login">
-              <label for="rem-login">remember me</label>
-              <a class="recover-password" href="">reset password</a>
-            </div>
-            <div class="submit">
-              <button class="btn" type="submit">login</button>
-            </div>
-          </form>
-        </div>
-        <div class="spacer">
-          <div class="submit-link">
-            <div class="link">
-              <a href="" class="login-required">Submit a new link</a>
-              <div class="edge"></div>
-            </div>
+            <p>
+              <a href="" id="search-showmore">advanced search: by author, subreddit...</a>
+            </p>
+          </div> -->
+        </form>
+      </div>
+      <div class="spacer">
+        <form method="post" action="" id="login-main" class="login-form">
+          <input type="hidden" name="op" value="login-main">
+          <input name="user" placeholder="username" type="text" maxlength="20">
+          <input name="password" placeholder="password" type="password">
+          <div id="remember-me">
+            <input type="checkbox" name="rem" id="rem-login">
+            <label for="rem-login">remember me</label>
+            <a class="recover-password" href="">reset password</a>
           </div>
-        </div>
-        <div class="spacer">
-          <div class="submit-text">
-            <div class="link">
-              <a href="" class="login-required">Submit a new text post</a>
-              <div class="edge"></div>
-            </div>
+          <div class="submit">
+            <button class="btn" type="submit">login</button>
+          </div>
+        </form>
+      </div>
+      <div class="spacer">
+        <div class="submit-link">
+          <div class="link">
+            <a href="" class="login-required">Submit a new link</a>
+            <div class="edge"></div>
           </div>
         </div>
       </div>
-      <!-- Left Side Bar -->
-      <!-- <div class="left-bar">
-        <div class="grip">
-
+      <div class="spacer">
+        <div class="submit-text">
+          <div class="link">
+            <a href="" class="login-required">Submit a new text post</a>
+            <div class="edge"></div>
+          </div>
         </div>
-        <div class="content">
-          <ul class="left-top">
-            <li>
-              <a href="">Home
-                <br>
-                <span class="desc">the home feed</span>
-              </a>
-            </li>
-            <li>
-              <a href="">explore</a>
-            </li>
-          </ul>
-          <h3>Multireddits</h3>
-          <ul class="left-mid">
-            <li>
-              <a href="">explore multis</a>
-            </li>
-            <li class="create">
-              <form>
-                <input type="text" class="multi-name" placeholder="name">
-                <button>create</button>
-              </form>
-            </li>
-          </ul>
-          <ul class="left-bottom">
-            <li>
-              <a href="">
-                everything
-                <br>
-                <span>from all the subreddits</span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                saved
-              </a>
-            </li>
-          </ul>
+      </div>
+      <div class="spacer">
+        <div class="gold-bar">
+          <div class="inner-gold">
+            <h2>daily reddit gold goal</h2>
+            <div class="prog-bar">
+              <p>
+                69%
+              </p>
+              <div class="bar">
+                <div class="prog"></div>
+              </div>
+            </div>
+            <a href="">help support reddit</a>
+          </div>
         </div>
-      </div> -->
-      <!-- Main Body -->
-      <div class="main">
-
+      </div>
+    </div>
+    <!-- Main Body -->
+    <div class="content">
+      <div class="spacer">
+        <div class="trending">
+          <div class="rank-spacer"></div>
+          <div class="midcol-spacer"></div>
+          <div class="trending-content">
+            <strong>trending subreddits</strong>
+            <ul>
+              <li>
+                <a href="">r/frogs</a>
+              </li>
+              <li>
+                <a href="">r/KeanuBeingAwesome</a>
+              </li>
+              <li>
+                <a href="">r/amazon</a>
+              </li>
+              <li>
+                <a href="">r/PrimeDay</a>
+              </li>
+              <li>
+                <a href="">r/3atatime</a>
+              </li>
+            </ul>
+            <a href="" class="comments">24 comments</a>
+          </div>
+        </div>
+      </div>
+      <div class="spacer">
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">1</span>
+          <div class="votes">
+            <a class="arrow up" id="arr" href="#arr"></a>
+            <div class="upvotes">14.0k</div>
+            <a class="arrow down" id="arr2" href="#arr2"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://b.thumbs.redditmedia.com/cfE3pDazV7L9CxTuY6DQ_fmnY3_TGht2tW7TWHOAIbc.jpg" width="70" height="70" alt="">
+            <div class="duration">0:21</div>
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1">Never Give up</a>
+                <span class="domain">(
+                  <a href="">v.redd.it</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line">submitted
+                <time>3 hours ago</time> by
+                <a href="" class="author">Haarif</a>
+                <span>to</span>
+                <a href="" class="subreddit">r/nonononoyes</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">340 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">2</span>
+          <div class="votes">
+            <a class="arrow up" id="arr3" href="#arr3"></a>
+            <div class="upvotes">10k</div>
+            <a class="arrow down" id="arr4" href="#arr4"></a>
+          </div>
+          <a class="thumbnail self" href=""></a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">Prison is Hell</a>
+                <span class="domain">(
+                  <a href="">self.nosleep</a>)</span>
+              </p>
+              <div class="expand-button collapsed selftext"></div>
+              <p class="tag-line">submitted
+                <time>11 hours ago</time> by
+                <a href="" class="author">SamMarduk</a>
+                <span></span> to
+                <a href="" class="subreddit">r/nosleep</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">308 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">3</span>
+          <div class="votes">
+            <a class="arrow up" id="arr5" href="#arr5"></a>
+            <div class="upvotes">808</div>
+            <a class="arrow down" id="arr6" href="#arr6"></a>
+          </div>
+          <a class="thumbnail self" href=""></a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">Maybe its time we move away from progression in PVP shooters</a>
+                <span class="domain">(
+                  <a href="">self.truegaming</a>)</span>
+              </p>
+              <div class="expand-button collapsed selftext"></div>
+              <p class="tag-line ">submitted
+                <time>10 days ago</time> by
+                <a href="" class="author">BeerGogglesFTW</a>
+                <span></span> to
+                <a href="" class="subreddit">r/truegaming</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">221 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">4</span>
+          <div class="votes">
+            <a class="arrow up" id="arr7" href="#arr7"></a>
+            <div class="upvotes">16.4k</div>
+            <a class="arrow down" id="arr8" href="#arr8"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://a.thumbs.redditmedia.com/YLYBE3DeKRWujug-rdgdEXxBj25ynBOqzS4pHcB2W78.jpg" width="70" height="70" alt="">
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">Hecking language developers</a>
+                <span class="domain">(
+                  <a href="">i.redd.it</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>7 days ago</time> by
+                <a href="" class="author">srawesomeguy</a>
+                <span></span> to
+                <a href="" class="subreddit">r/ProgrammerHumor</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">258 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">5</span>
+          <div class="votes">
+            <a class="arrow up" id="arr9" href="#arr9"></a>
+            <div class="upvotes">11.5k</div>
+            <a class="arrow down" id="arr10" href="#arr10"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://a.thumbs.redditmedia.com/0dcuotvWtP6LRRHLKAbeqoAQayhlifVFnKHU-ibR8x4.jpg" width="70" height="70" alt="">
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">Scream at own ass</a>
+                <span class="domain">(
+                  <a href="">i.redd.it</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>8 days ago</time> by
+                <a href="" class="author">SlimyBadger178</a>
+                <span></span> to
+                <a href="" class="subreddit">r/dank_meme</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">83 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">6</span>
+          <div class="votes">
+            <a class="arrow up" id="arr11" href="#arr11"></a>
+            <div class="upvotes">1907</div>
+            <a class="arrow down" id="arr12" href="#arr12"></a>
+          </div>
+          <a class="thumbnail self" href=""></a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">The Djinn Bottle</a>
+                <span class="domain">(
+                  <a href="">self.nosleep</a>)</span>
+              </p>
+              <div class="expand-button collapsed selftext"></div>
+              <p class="tag-line ">submitted
+                <time>1 hour ago</time> by
+                <a href="" class="author">Cymoril_Melnibone</a>
+                <span></span> to
+                <a href="" class="subreddit">r/nosleep</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">90 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">7</span>
+          <div class="votes">
+            <a class="arrow up" id="arr13" href="#arr13"></a>
+            <div class="upvotes">72.2k</div>
+            <a class="arrow down" id="arr14" href="#arr14"></a>
+          </div>
+          <a class="thumbnail default" href=""></a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">TIL That the world's oldest continuously running business is a hot springs hotel in Japan that's run since
+                  705 A.D.</a>
+                <span class="domain">(
+                  <a href="">amp.slate.com</a>)</span>
+              </p>
+              <p class="tag-line ">submitted
+                <time>7 days ago</time> by
+                <a href="" class="author">Beckels84</a>
+                <span></span> to
+                <a href="" class="subreddit">r/todayilearned</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">1437 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">8</span>
+          <div class="votes">
+            <a class="arrow up" id="arr15" href="#arr15"></a>
+            <div class="upvotes">6632</div>
+            <a class="arrow down" id="arr16" href="#arr16"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://b.thumbs.redditmedia.com/QlWOki7HTV0G8tn-soJ5TOM5bkq43gLWep8ZnXVYPqE.jpg" width="70" height="70" alt="">
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">!fun</a>
+                <span class="domain">(
+                  <a href="">i.redd.it</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>2 hours ago</time> by
+                <a href="" class="author">ZuccFaceberg</a>
+                <span></span> to
+                <a href="" class="subreddit">r/ProgrammerHumor</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">108 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">9</span>
+          <div class="votes">
+            <a class="arrow up" id="arr17" href="#arr17"></a>
+            <div class="upvotes">14.0k</div>
+            <a class="arrow down" id="arr18" href="#arr18"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://a.thumbs.redditmedia.com/Xt8F_drm-bqysnXjba6tug9yXrp5z_6AcBR45NeIlp8.jpg" width="70" height="70" alt="">
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">Pink Mercy raises more than 12.7 Million USD for BCRF!</a>
+                <span class="domain">(
+                  <a href="">playoverwatch.com</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>12 hours ago</time> by
+                <a href="" class="author">DocterrificDoc</a>
+                <span></span> to
+                <a href="" class="subreddit">r/Overwatch</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">864 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">10</span>
+          <div class="votes">
+            <a class="arrow up" id="arr19" href="#arr19"></a>
+            <div class="upvotes">11.4k</div>
+            <a class="arrow down" id="arr20" href="#arr20"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://a.thumbs.redditmedia.com/9EagCv6-JSn3fCKrTH0vM0t3oHlHfGtEMO0w6gzAif0.jpg" width="70" height="70" alt="">
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">meirl</a>
+                <span class="domain">(
+                  <a href="">i.imgur.com</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>5 hours ago</time> by
+                <a href="" class="author">PhantomFuck</a>
+                <span></span> to
+                <a href="" class="subreddit">r/meirl</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">73 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">11</span>
+          <div class="votes">
+            <a class="arrow up" id="arr21" href="#arr21"></a>
+            <div class="upvotes">30.9k</div>
+            <a class="arrow down" id="arr22" href="#arr22"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://b.thumbs.redditmedia.com/syGJv21XGWF84MwFkhLvcrXpjgKb9sOwYI7h1r4Xz_c.jpg" width="70" height="70" alt="">
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">Me irl</a>
+                <span class="domain">(
+                  <a href="">i.redd.it</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>20 hours ago</time> by
+                <a href="" class="author">Damnit_Dogz</a>
+                <span></span> to
+                <a href="" class="subreddit">r/meirl</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">274 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">12</span>
+          <div class="votes">
+            <a class="arrow up" id="arr23" href="#arr23"></a>
+            <div class="upvotes">20.2k</div>
+            <a class="arrow down" id="arr24" href="#arr24"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://b.thumbs.redditmedia.com/ibRhIbKIlgaSf6gm34OJN28ygwz0BYQWpsWw9E5GO4k.jpg" width="70" height="70" alt="">
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">WTF how did you let this happen</a>
+                <span class="domain">(
+                  <a href="">i.redd.it</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>21 hours ago</time> by
+                <a href="" class="author">Phatars71</a>
+                <span></span> to
+                <a href="" class="subreddit">r/WTF</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">1708 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">13</span>
+          <div class="votes">
+            <a class="arrow up" id="arr25" href="#arr25"></a>
+            <div class="upvotes">21.7k</div>
+            <a class="arrow down" id="arr26" href="#arr26"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://b.thumbs.redditmedia.com/YK7wLE6FKRBaLAe2Nw0SXGjOpEQA-XQ1iwAz9YCq9ok.jpg" width="70" height="70" alt="">
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">Oh boy here we go again.</a>
+                <span class="domain">(
+                  <a href="">i.redd.it</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>9 hours ago</time> by
+                <a href="" class="author">Memeborghini</a>
+                <span></span> to
+                <a href="" class="subreddit">r/BikiniBottomTwitter</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">124 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">14</span>
+          <div class="votes">
+            <a class="arrow up" id="arr27" href="#arr27"></a>
+            <div class="upvotes">19.6k</div>
+            <a class="arrow down" id="arr28" href="#arr28"></a>
+          </div>
+          <a class="thumbnail" href="">
+            <img src="https://b.thumbs.redditmedia.com/RGbklyRJUx52D4real8EbJimiwfa0nFNrUe8TeoJecY.jpg" width="70" height="70" alt="">
+            <div class="duration">0:16</div>
+          </a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">When you get Widowmaker in Mystery Heros and realize you can't aim at all</a>
+                <span class="domain">(
+                  <a href="">v.redd.it</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>15 hours ago</time> by
+                <a href="" class="author">Torch07</a>
+                <span></span> to
+                <a href="" class="subreddit">r/Overwatch</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">485 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="posts">
+          <p class="parent"></p>
+          <span class="rank">15</span>
+          <div class="votes">
+            <a class="arrow up" id="arr29" href="#arr29"></a>
+            <div class="upvotes">2387</div>
+            <a class="arrow down" id="arr30" href="#arr30"></a>
+          </div>
+          <a class="thumbnail self" href=""></a>
+          <div class="posts-content">
+            <div class="top-matter">
+              <p class="title">
+                <a class="title" href="" tabindex="1" rel="">When I met her, she seemed exceedingly normal</a>
+                <span class="domain">(
+                  <a href="">self.LetsNotMeet</a>)</span>
+              </p>
+              <div class="expand-button collapsed video"></div>
+              <p class="tag-line ">submitted
+                <time>18 hours ago</time> by
+                <a href="" class="author">LunarGargler</a>
+                <span></span> to
+                <a href="" class="subreddit">r/LetsNotMeet</a>
+              </p>
+              <ul class="posts-list buttons">
+                <li class="first">
+                  <a href="#">171 comments</a>
+                </li>
+                <li>
+                  <a href="">share</a>
+                </li>
+                <li>
+                  <a href="#">save</a>
+                </li>
+                <li>
+                  <span>
+                    <a href="">hide</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="">report</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearleft"></div>
+        </div>
+        <div class="nav-buttons">
+          <span class="next-prev">
+            view more:
+            <span class="next-button">
+              <a href="">next</a>
+            </span>
+          </span>
+        </div>
       </div>
     </div>
   </main>
