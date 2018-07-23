@@ -93,23 +93,42 @@ header {
   overflow: hidden;
 }
 
-.sr-dropdown {
+.sr-list {
   display: inline-block;
 }
 
-.sr-dropdown span {
+.srdropdown {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.srdropdown span {
   padding: 5px;
 }
 
-.sr-dropdown i {
+.srdropdown i {
   margin-right: 7px;
   font-size: 12px;
   font-weight: normal;
   color: rgb(128, 128, 128);
 }
 
-.sr-dropdown-menu {
-  display: inline-block;
+.srdropdownmenu {
+  display: none;
+  white-space: nowrap;
+  position: absolute;
+  border: 1px solid rgb(128, 128, 128);
+  background-color: rgb(255, 255, 255);
+  line-height: normal;
+  padding-top: 2px;
+  margin-left: 5px;
+}
+
+.srdropdownmenu a {
+  padding: 1px 3px 1px 3px;
+  cursor: pointer;
+  font-style: italic;
+  border-top: 1px dotted rgb(51, 102, 153);
 }
 
 .sr-list {
@@ -207,7 +226,7 @@ header {
   font-weight: bold;
 }
 
-.tab-menu li a:target {
+.tab-menu li.nav-select a {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(95, 153, 207);
   border-bottom: 1px solid rgb(255, 255, 255);
@@ -704,12 +723,6 @@ form input[type=radio] {
   background-repeat: no-repeat;
 }
 
-.arrow.up:target {
-  background-image: url(sprite-reddit.png);
-  background-position: -63px -1647px;
-  background-repeat: no-repeat;
-}
-
 .arrow {
   margin: 2px 0px 0px 0px;
   width: 100%;
@@ -721,18 +734,11 @@ form input[type=radio] {
   width: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: none;
 }
 
 .arrow.down {
   background-image: url(sprite-reddit.png);
   background-position: 0px -1647px;
-  background-repeat: no-repeat;
-}
-
-.arrow.down:target {
-  background-image: url(sprite-reddit.png);
-  background-position: -21px -1647px;
   background-repeat: no-repeat;
 }
 
