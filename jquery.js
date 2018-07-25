@@ -1,13 +1,10 @@
-// Initializes Posts Contents
-var clickty = document.querySelector("#openPost");
-
-var act = document.querySelector(".postDropdown");
-
-clickty.addEventListener("click", function () {
-    act.classList.toggle("open");
-    clickty.classList.toggle("collapsed");
-    clickty.classList.toggle("expanded");
+// // Initializes Posts Contents
+$(".expand-button").click(function () {
+    var target = $(this).data("target");
+    $(target).slideToggle('fast');
+    $(this).toggleClass("expand-button collapsed video expand-button expanded video");
 });
+
 //  Initializes nav-bar DropDown
 $(document).ready(function () {
      $("li").on({
