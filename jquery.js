@@ -1,4 +1,15 @@
- $(document).ready(function () {
+// Initializes Posts Contents
+var clickty = document.querySelector("#openPost");
+
+var act = document.querySelector(".postDropdown");
+
+clickty.addEventListener("click", function () {
+    act.classList.toggle("open");
+    clickty.classList.toggle("collapsed");
+    clickty.classList.toggle("expanded");
+});
+//  Initializes nav-bar DropDown
+$(document).ready(function () {
      $("li").on({
          click: function () {
              $('li').removeClass('nav-select');
@@ -7,6 +18,7 @@
      });
  });
 
+ // Initializes 
  $(document).on("click", ".votes", function () {
      alert("Please Log in or sign up first.");
  });

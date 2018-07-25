@@ -1002,3 +1002,18 @@ ul {
   font-size: smaller;
   clear: both;
 }
+
+.postDropdown {
+  border: 0.5px solid #369;
+  height: 0;
+  background-color: #fafafa;
+  border-radius: 7px;
+  visibility: hidden;
+  transition: all, 0.3s;
+  transition-timing-function: linear;
+}
+
+.open {
+  height: 400px;
+  visibility: visible;
+}
