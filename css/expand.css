@@ -1,0 +1,60 @@
+.expand-button {
+    float: left;
+    height: 23px;
+    width: 23px;
+    margin: 2px 5px 2px 0;
+    background: transparent none no-repeat scroll center center;
+    cursor: pointer
+}
+
+.expand-button.expanded.video,
+.expand-button.expanded.selftext,
+.expand-button.expanded.crosspost {
+    background-image: url(sprite-expand.png);
+    background-position: 0px -433px;
+    background-repeat: no-repeat
+}
+
+.expand-button.expanded.video:hover,
+.expand-button.expanded.selftext:hover,
+.expand-button.expanded.crosspost:hover {
+    background-image: url(sprite-expand.png);
+    background-position: 0px -404px;
+    background-repeat: no-repeat
+}
+
+.expand-button.collapsed.selftext {
+    background-image: url(sprite-expand.png);
+    background-position: 0px -549px;
+    background-repeat: no-repeat
+}
+
+.expand-button.collapsed.selftext:hover {
+    background-image: url(sprite-expand.png);
+    background-position: 0px -520px;
+    background-repeat: no-repeat
+}
+
+.expand-button.collapsed.video {
+    background-image: url(sprite-expand.png);
+    background-position: 0px -491px;
+    background-repeat: no-repeat;
+}
+
+.expand-button.collapsed.video:hover {
+    background-image: url(sprite-expand.png);
+    background-position: 0px -462px;
+    background-repeat: no-repeat
+}
+
+.expand-button.collapsed.crosspost {
+    background-image: url(sprite-expand.png);
+    background-position: -26px -578px;
+    background-repeat: no-repeat
+}
+
+.expand-button.collapsed.crosspost:hover {
+    background-image: url(sprite-expand.png);
+    background-position: 0px -578px;
+    background-repeat: no-repeat
+}
