@@ -1,10 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  font-family: verdana, arial, helvetica, sans-serif ;
-  box-sizing: border-box;
-} */
-
 body {
   font: normal x-small verdana, arial, helvetica, sans-serif;
   background-color: rgb(255, 255, 255);
@@ -872,6 +865,10 @@ a img {
   text-decoration: none;
 }
 
+.tag-line a:hover {
+  text-decoration: underline;
+}
+
 a.author {
   margin-right: 0.5em;
 }
@@ -932,6 +929,81 @@ a.author {
   border: 1px solid rgb(221, 221, 221);
   border-radius: 3px;
   font-weight: bold;
+}
+
+.postDropdown1,
+.postDropdown2,
+.postDropdown3,
+.postDropdown4,
+.postDropdown5,
+.postDropdown6,
+.postDropdown7,
+.postDropdown8,
+.postDropdown9,
+.postDropdown10,
+.postDropdown11,
+.postDropdown12,
+.postDropdown13,
+.postDropdown14 {
+  display: none;
+}
+
+.postDropdown2,
+.postDropdown3,
+.postDropdown6,
+.postDropdown14 {
+  border: 0.5px solid #369;
+  background-color: #fafafa;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-size: 1.45em;
+  color: #222222;
+  width: 860px;
+}
+
+.postDropdown2 p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.postDropdown3 p {
+  line-height: 1.4em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.postDropdown3 ol {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  padding-left: 40px;
+  list-style-type: decimal;
+}
+
+.postDropdown6 p {
+  line-height: 1.4em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.postDropdown6 hr {
+  border: 0;
+  color: transparent;
+  background: #c5c1ad;
+  height: 2px;
+  padding: 0;
+}
+
+.postDropdown14 p {
+  line-height: 1.4em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.preview img {
+  width: 100%;
+  height: auto;
 }
 
 /* --------------------------
